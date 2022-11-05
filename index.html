@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate Project</title>
+
+    <!-- Css Link -->
+    <link rel="stylesheet" href="./assets/style/style.css">
+
+    <!-- PersianTools Package Cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@persian-tools/persian-tools/build/persian-tools.umd.js"></script>
+</head>
+
+<body dir="rtl">
+    <div class="container">
+        <section>
+            <input type="text" placeholder="نام" id="nameValidate" value="" class="input_styles" />
+            <div id="name_append" class="massage_styles"></div>
+
+            <input type="number" placeholder="شماره همراه" id="phoneNumberValidate" value="" class="input_styles" />
+            <div id="phoneNumber_append" class="massage_styles"></div>
+            <div id="phoneNumberOperator_append" class="massage_styles_true"></div>
+        </section>
+        
+        <section>
+            <input type="text" placeholder="نام خانوادگی" value="" id="lastNameValidate" class="input_styles" />
+            <div id="lastName_append" class="massage_styles"></div>
+
+            <input type="number" placeholder="کد ملی" id="nationalCodeValidate" value="" class="input_styles" />
+            <div id="meliCode_append" class="massage_styles"></div>
+        </section>
+        
+        <div>
+            <input type="number" placeholder="سن" value="" maxlength="2" id="ageValidate" class="input_styles"
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" />
+            <div id="age_append" class="massage_styles"></div>
+        </div>
+    </div>
+
+    <div class="btn_parent">
+        <button class="submit_button" onclick="submitDatas()">Validate</button>
+    </div>
+
+    <!-- Notif Box -->
+    <div id="notifBox"></div>
+
+    <!-- Information Box -->
+    <div class="information_container">
+        <ul>
+            <li>لطفا تمامی فیلد ها را پر نمایید</li>
+            <li>لطفا از صحیح بودن شماره همراه وارد شده ، اطمینان حاصل فرمایید</li>
+            <li>لطفا از صحیح بودن کد ملی وارد شده ، اطمینان حاصل فرمایید</li>
+            <li>برای افراد ، با بازه سنی 18 سال و 18 سال به بالا</li>
+        </ul>
+    </div>
+
+    <!-- Script Link -->
+    <script src="./assets/script/main.js"></script>
+</body>
+
+</html>

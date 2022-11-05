@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+* {
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Vazir-FD;
+}
+
+@font-face {
+    font-family: 'Vazir-FD';
+    src: url('../font/vazir/woff/Vazir-FD.woff') format('woff');
+}
+
+input:focus {
+    outline: none;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    box-shadow: 0 0 2px 0 rgb(173, 173, 173);
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.input_styles {
+    width: 80%;
+    padding: 10px;
+    background: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 0 rgb(205, 205, 205);
+    margin: 10px 0;
+}
+
+.input_styles::placeholder {
+    text-align: right;
+}
+
+.massage_styles {
+    font-size: 10px;
+    color: red;
+    font-weight: bold;
+}
+
+.massage_styles_true {
+    font-size: 10px;
+    color: green;
+    font-weight: bold;
+}
+
+.btn_parent {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.submit_button {
+    background: darkblue;
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    width: 30%;
+    text-align: center;
+}
+
+.submit_button:hover {
+    background: rgb(0, 0, 121);
+}
+
+.information_container {
+    width: 50%;
+    margin: 0 auto;
+    background: #E6F7FF;
+    color: #61A7D2;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #91D5FF;
+}
+
+.information_container * {
+    line-height: 35px;
+    font-weight: bold;
+}
+
+.notifBox {
+    width: 50%;
+    margin: 0 auto;
+    background: #E9F8E3;
+    color: #5F8F4A;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #AFD49F;
+}
+
+.wrong {
+    border: 1px solid red !important;
+}
+
+.correct {
+    border: 1px solid green !important;
+}
